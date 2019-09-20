@@ -26,40 +26,40 @@
 - Views
 
 # Front-End
-- Code editor 
-  - VS Code
-- Compilation & Packing
-   - Webpak 
-   - Gulp
-- Front-end framework
-  - React
-  - Ember
+  - Code editor 
+    - VS Code
+  - Compilation & Packing
+     - Webpak 
+     - Gulp
+  - Front-end framework
+    - React
+    - Ember
   
   
-  # Backend
+# Backend
   - HTTP end-points
   - Authorise users
   - Serve front-end
   - Framework : Pthon
-    - Django
-    - Express
-    - Flask
-   - Login : BU 
-   - Security : OWASP
+      - Django
+      - Express
+      - Flask
+  - Login : BU 
+  - Security : OWASP
    
-   # Test
+ # Test
    - DEV
    - Beta
    - Production
    
-   # Host
+ # Host
    - Domain
    - Buy/Setup SSL
    - Cloud
-    - Azure/Amazon
+   - Azure/Amazon
     
-    # Deploy
-    - GitLab
-    - Bitbucket
-    - Jenkins
+ # Deploy
+   - GitLab
+   - Bitbucket
+   - Jenkins
    

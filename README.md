@@ -1,37 +1,65 @@
-## Welcome to GitHub Pages
+## Redevelopment of business simulation software (from Excel to Web)
 
-You can use the [editor on GitHub](https://github.com/vijaykarigowdara/b-sim/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Design
+- Navigartion
+- Forms
+- Buttons
+- Dialog windows
+- Other interactive elements
 
-### Markdown
+# Workflow 
+- Login with BU Credentials
+- Computation
+- Store intermediate results
+- Download files
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+# Prototype/Wireframe
+- Adobe XD
+- Figma
 
-# Header 1
-## Header 2
-### Header 3
+# Database design
+- Tables
+- Security
+- Updates
+- Views
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vijaykarigowdara/b-sim/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Front-End
+- Code editor 
+  - VS Code
+- Compilation & Packing
+   - Webpak 
+   - Gulp
+- Front-end framework
+  - React
+  - Ember
+  
+  
+  # Backend
+  - HTTP end-points
+  - Authorise users
+  - Serve front-end
+  - Framework : Pthon
+    - Django
+    - Express
+    - Flask
+   - Login : BU 
+   - Security : OWASP
+   
+   # Test
+   - DEV
+   - Beta
+   - Production
+   
+   # Host
+   - Domain
+   - Buy/Setup SSL
+   - Cloud
+    - Azure/Amazon
+    
+    # Deploy
+    - GitLab
+    - Bitbucket
+    - Jenkins
+   

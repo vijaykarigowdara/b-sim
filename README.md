@@ -1,6 +1,5 @@
 ## Redevelopment of business simulation software (from Excel to Web)
 
-
 # Design
 - Navigartion
 - Forms
@@ -13,7 +12,6 @@
 - Computation
 - Store intermediate results
 - Download files
-
 
 # Prototype/Wireframe
 - Adobe XD
@@ -34,7 +32,6 @@
   - Front-end framework
     - React
     - Ember
-  
   
 # Backend
   - HTTP end-points

@@ -71,9 +71,7 @@
               - URL http://127.0.0.1:8000/
  - Tutorials:
                   - https://www.youtube.com/watch?v=zb-ixb-fBGI&list=PLTPOhsA1ovnkyBbnG5RwF9YFWLCqsD0Nf&index=2
-                  
                   - https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=1
-           
                   - https://www.youtube.com/watch?v=uZgRbnIsgrA
              
   

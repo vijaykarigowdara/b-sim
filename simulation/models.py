@@ -11,8 +11,6 @@ class InitialParameter(models.Model):
     fy_3 = models.IntegerField()
     fy_combined = models.IntegerField()
 
-
-
     class Meta:
         abstract = True
 

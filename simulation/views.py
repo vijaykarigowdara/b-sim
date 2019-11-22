@@ -4,9 +4,17 @@ from django.shortcuts import render, redirect, get_object_or_404
 
 from .forms import *
 
+start_content = []
 
 def index(request):
     return render(request, 'inv/index.html')
+
+def start(request):
+    context = {
+        'items': start_content,
+        'header': 'Start',
+    }
+    return render(request, 'inv/project_start.html', context)
 
 def display_successFactor(request):
     items = SuccessFactor.objects.all()
@@ -36,7 +44,6 @@ def add_item(request, cls):
     else:
         form = cls()
         return render(request, 'inv/add_new.html', {'form' : form})
-
 
 def add_(request):
     return add_item(request, SuccessFactorForm)
@@ -69,6 +76,15 @@ def edit_successFactor(request, pk):
 def edit_performanceIndicator(request, pk):
     return edit_item(request, pk, PerformanceIndicator, PerformanceIndicatorForm)
 
+# Operations_Management
+
+def operation_management(request):
+    operation_management = SuccessFactor.objects.all()
+    context = {
+        'operation_management': operation_management,
+        'header': 'Operation Management',
+    }
+    return render(request, 'inv/operation_mgmt.html', context)
 
 
 

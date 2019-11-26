@@ -1,0 +1,69 @@
+{% extends 'inv/base.html' %}
+
+{% block body %}
+
+<div class="add_buttons">
+
+    <div class="button-group">
+        <a href="{% url 'operation_management' %}" class="btn btn-primary btn-md btn-trim" role="button">Forecast for the next three years</a>
+
+
+        <a href="{% url 'display_performanceIndicator' %}" class="btn btn-primary btn-md btn-trim" role="button">Targeted Market Size (per product and FY)</a>
+
+    </div>
+
+</div>
+
+<table class="table table-hovered">
+    <thead>
+    <tr>
+        <th>No</th>
+        <th>Distribution</th>
+        <th>Name</th>
+        <th>Material (per unit)</th>
+        <th>Labor (per unit)</th>
+        <th>Others (per unit)</th>
+        <th>Price (per unit)</th>
+        <th>Units (per unit)</th>
+         <th>Cut off point</th>
+         <th>Weight (lb)</th>
+         <th>Weight(full) (lb)</th>
+         <th>Height (inches)</th>
+         <th>Diameter (inches)</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+    {% for item in operation_management %}
+
+    <tr>
+        <td>{{ item.pk }}</td>
+        <td width="600" >{{ item.name }}</td>
+        <td>{{ item.unit }}</td>
+        <td><input style="width:100px" type="number" id="fy_0" value="{{item.fy_0}}"></td>
+        <td><input style="width:100px" type="number" id="fy_1" value="{{item.fy_1}}"></td>
+        <td><input style="width:100px" type="number" id="fy_2" value="{{item.fy_2}}"></td>
+        <td><input style="width:100px" type="number" id="fy_3" value="{{item.fy_3}}"></td>
+        <td><input style="width:100px" type="number" id="fy_combined" value="{{item.fy_combined}}"></td>
+
+        {% if header|lower == "laptops" %}
+        <td>
+            <a href="{% url 'edit_successFactor' item.pk %}" class="btn btn-warning btn-sm" role="button"
+               aria-pressed="true"> Edit</a>
+        </td>
+        {% elif header|lower == "desktops" %}
+        <td>
+            <a href="{% url 'edit_performanceIndicator' item.pk %}" class="btn btn-warning btn-sm" role="button"
+               aria-pressed="true"> Edit</a>
+        </td>
+
+        {% endif %}
+
+    </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
